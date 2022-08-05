@@ -6,7 +6,7 @@ https://pytorch.org/get-started/locally/
 
 https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
 
-Then, install RDKit package with `pip install rdkit matplotlib`. RDKit Package will help converting molecules to graphs and generating 3D coordinates.
+Then, install RDKit and Matplotlib package with `pip install rdkit matplotlib`. RDKit Package will help converting molecules to graphs and generating 3D coordinates.
 
 # Pretrained models
 
