@@ -22,6 +22,8 @@ target: 0 to 18
 
 Example: `python train.py gat model_v1 cpu 30 3 4` will use gat model to learn properties 3 and 4 of molecules with cpu, and the model back up is saved to folder `model_v1`.
 
+Note: if you are training your model for the first time, it may take time to load and process data. It will be much faster afterwards.
+
 # Analyze
 During training, you can analyze the learning curves with `draw.py`. The usage is `python draw.py [target] [model_dir] [graph]`.
 
