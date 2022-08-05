@@ -1,7 +1,7 @@
 # qm9_gnn
 
 # Setup
-First, install Pytorch and corresponding version of Pytorch Geometric from following links
+First, install Pytorch and Pytorch Geometric from following links
 
 https://pytorch.org/get-started/locally/
 
