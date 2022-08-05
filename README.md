@@ -8,6 +8,10 @@ https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
 
 Then, install RDKit package with `pip install rdkit`. RDKit Package will help converting molecules to graphs and generating 3D coordinates.
 
+# Pretrained models
+
+Pretrained models are available at https://github.com/liwenhan220/qm9_gnn/releases.
+
 # Training your model
 
 Open Terminal and run `train.py`. The usage is `python train.py [model_type] [save_dir] [device] [num_epochs] [target_low] [target_high]`.
