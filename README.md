@@ -10,7 +10,7 @@ Then, install RDKit package with `pip install rdkit`. RDKit Package will help co
 
 # Training your model
 
-Open Terminal in the folder and run `python train.py`. The usage is `python train.py [model_type] [save_dir] [device] [num_epochs] [target_low] [target_high]`.
+Open Terminal and run `python train.py`. The usage is `python train.py [model_type] [save_dir] [device] [num_epochs] [target_low] [target_high]`.
 
 model_type: (gat/gnn/egnn)
 
@@ -24,6 +24,12 @@ Example: `python train.py gat model_v1 cpu 30 3 4` will use gat model to learn p
 
 # Analyze
 During training, you can analyze the learning curves with `draw.py`. The usage is `python draw.py [target] [model_dir] [graph]`.
+
+target: 0 to 18
+
+model_dir: Your model directory
+
+graph: (loss/acc/tacc)
 
 # Using your model
 
