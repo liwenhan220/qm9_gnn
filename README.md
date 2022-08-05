@@ -10,7 +10,7 @@ Then, install RDKit package with `pip install rdkit`. RDKit Package will help co
 
 # Training your model
 
-Open Terminal and run `python train.py`. The usage is `python train.py [model_type] [save_dir] [device] [num_epochs] [target_low] [target_high]`.
+Open Terminal and run `train.py`. The usage is `python train.py [model_type] [save_dir] [device] [num_epochs] [target_low] [target_high]`.
 
 model_type: (gat/gnn/egnn)
 
@@ -31,6 +31,19 @@ model_dir: Your model directory
 
 graph: (loss/acc/tacc)
 
+Example: `python draw.py 3 model_v1 loss` will draw the loss curve (on property 3) of the model in `model_v1` folder. The `acc` represents R squared curve, while `tacc` represents validation R squared.
+
 # Using your model
 
-Open Terminal in the folder and run `python train.py`. It should prompt the usage
+Open Terminal in the folder and run `predict.py`. The usage is to run `python predict.py [model_type] [model_dir] [device] [target_low] [target_high]`, then it will ask you to provide SMILES string of your input molecule for prediction.
+
+model_type: (gat/gnn/egnn)
+
+model_dir: Directory of your model
+
+device: cpu, cuda, mps, etc.
+
+target: 0 to 18
+
+Example: `python predict.py gat model_v1 cpu 3 4` will use gat model in `model_v1` folder to predict properties 3 and 4 on cpu.
+
