@@ -1,5 +1,3 @@
-import os
-os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 from rdkit import Chem
 from rdkit.Chem.rdmolops import AddHs
 from rdkit.Chem.rdchem import BondType as BT
