@@ -2,5 +2,7 @@
 
 # Setup
 First, install Pytorch and corresponding version of Pytorch Geometric from following links
+
 https://pytorch.org/get-started/locally/
+
 https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
